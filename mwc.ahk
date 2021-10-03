@@ -6,13 +6,11 @@ SetWorkingDir %A_ScriptDir%
 
 #IfWinActive, Oblivion
      ^WheelDown::
-        Click, Down
-        Click, Up
+        Click
         return
 
     ^WheelUp::
-        Click, Down
-        Click, Up
+        Click
         return
 
      !F4::
