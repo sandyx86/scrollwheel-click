@@ -12,6 +12,7 @@ SetControlDelay, -1
 SendMode, Event
 SetWorkingDir %A_ScriptDir%
 
+#IfWinActive, Oblivion
     ^WheelUp::
     ^WheelDown::
         Click
@@ -29,7 +30,7 @@ SetWorkingDir %A_ScriptDir%
     z::Down
     x::Enter
 
-
+#IfWinNotActive, Oblivion
     !x::
         ExitApp, 0
         return
